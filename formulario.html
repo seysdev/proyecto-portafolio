@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULARIO</title>
+    <style>
+      [disabled],
+      [readonly] {
+        background: #c5c1c1;
+        color: black;
+      }
+
+      input:focus,
+      select:focus,
+      button:focus {
+        outline: none;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="color"],
+      input[type="range"],
+      input[type="date"],
+      input[type="number"],
+      input[type="email"],
+      textarea {
+        padding: 10px;
+        width: 300px;
+        transition: all 0.5s;
+        border: 1px solid #cdcdcd;
+      }
+
+      button {
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+      }
+
+      input:focus:invalid,
+      textarea:focus:invalid {
+        border: 1px solid red;
+        box-shadow: 4px 5px 0px 0px red;
+      }
+
+      input:focus:valid,
+      select:focus:valid,
+      textarea:focus:valid {
+        border: 1px solid green;
+        box-shadow: 4px 5px 0px 0px green;
+      }
+    </style>
+  </head>
+  <body>
+    <form autocomplete="off">
+      <label>Nombre</label>
+      <hr />
+      <input name="name" type="text" placeholder="Ingresa tu nombre" required />
+      <br /><br />
+      <label>Edad</label>
+      <hr />
+      <input
+        min="18"
+        max="64"
+        name="age"
+        type="number"
+        placeholder="Igresa tu edad"
+        required
+      />
+      <br /><br />
+      <label>Elige tu pais</label>
+      <hr />
+      <select name="country" required>
+        <option value="">Seleccionar</option>
+        <option value="peru">Peru</option>
+        <option value="argentina">Argentina</option>
+        <option value="uruguay">Uruguay</option>
+      </select>
+      <br /><br />
+      <label for="">Elige tu sexo</label>
+      <hr />
+      <label for="f">F</label>
+      <input name="sex" id="f" type="radio" checked />
+      <label for="m">M</label>
+      <input name="sex" id="m" type="radio" />
+      <br /><br />
+      <label>Elige tus hobbies</label>
+      <hr />
+      <label for="soccer">Futbol</label>
+      <input name="hobbies" id="soccer" type="checkbox" checked />
+      <label name="hobbies" for="voley">Voley</label>
+      <input name="hobbies" id="voley" type="checkbox" />
+      <label name="hobbies" for="tennis">Tennis</label>
+      <input name="hobbies" id="tennis" type="checkbox" />
+      <br /><br />
+      Contraseña
+      <hr />
+      <input name="password" type="password" required />
+      <br /><br />
+      Color
+      <hr />
+      <input name="color" type="color" required />
+      <br /><br />
+      Fecha
+      <hr />
+      <input name="date" type="date" required />
+      <br /><br />
+      <label for="email">Correo</label>
+      <hr />
+      <input id="email" name="email" type="email" required />
+      <br /><br />
+      <label for="range">Rango</label>
+      <hr />
+      <input id="range" name="range" type="range" required />
+      <br /><br />
+      Ingresa una descripcion
+      <hr />
+      <textarea name="description" cols="40" rows="20" required></textarea>
+      <hr />
+      <button type="submit">ENVIAR</button>
+    </form>
+  </body>
+</html>
