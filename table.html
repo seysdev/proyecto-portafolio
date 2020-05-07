@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      /* td {
+        text-align: center;
+        background-color: brown;
+        color: white;
+        padding: 10px;
+        border: 1px solid grey;
+      } */
+
+      thead th {
+        background: green;
+        color: white;
+        padding: 10px;
+      }
+
+      tbody td {
+        background: rgb(251, 217, 154);
+        padding: 10px;
+        color: #b92c00;
+      }
+
+      tfoot td {
+        background: blue;
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellspacing="0" border="1" style="width: 100%;">
+      <thead>
+        <tr>
+          <th rowspan="3" bgcolor="red">
+            Nombre
+          </th>
+          <th>
+            Apellido
+          </th>
+          <th>
+            DNI
+          </th>
+          <th>
+            Telefono
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">
+            Sebastian Yabiku
+          </td>
+          <td>
+            38747284
+          </td>
+          <td>
+            923708058
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">
+            Todos los derechos reservados
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
