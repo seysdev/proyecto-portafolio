@@ -66,20 +66,43 @@ input:focus {
   color: white;
 }
 
-p::first-line {
+p.destacado::first-line {
   background: red;
 }
 
-p::before {
+p.destacado::before {
   content: '"';
   font-size: 32px;
 }
 
-p::first-letter {
+p.destacado::first-letter {
   font-size: 42px;
 }
 
-p::after {
+p.destacado::after {
   content: '"';
   font-size: 32px;
+}
+
+::selection {
+  color: blue;
+  background: pink;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.parrafo {
+  font-size: 16px;
+  text-align: center;
+  background: #cdcdcd;
+  padding: 10px;
+}
+
+.parrafo::first-letter {
+  font-size: 42px;
+  color: blue;
+  line-height: 1;
+  background-image: url('../images/client-4.png');
 }

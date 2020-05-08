@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECTORS</title>
+    <style>
+      /*
+     globals
+     */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: arial;
+        padding: 20px;
+        width: 100%;
+        max-width: 960px;
+        margin: auto;
+      }
+
+      h2 {
+        color: orange;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 15px 0;
+      }
+
+      section {
+        border: 1px solid #cdcdcd;
+        margin-bottom: 20px;
+        padding: 15px;
+      }
+
+      section:hover {
+        box-shadow: 0 0 10px black;
+      }
+
+      ul > li {
+        border-top: 5px solid red;
+      }
+
+      h2 + p {
+        color: pink;
+      }
+
+      h2 ~ p {
+        color: white;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      h1 {
+          text-align: center;
+          margin-bottom: 20px;
+          border-bottom: 1px solid black;
+          padding-bottom: 15px;
+      }
+
+      /*
+      banner
+      */
+      .banner {
+        background-color: green;
+        color: gold;
+      }
+
+      .banner h2 {
+        color: white;
+      }
+
+      /*
+      about
+      */
+      .about {
+        background: blueviolet;
+        color: white;
+      }
+
+      .about h2 {
+        color: red;
+      }
+
+      /*
+      services
+      */
+      .services {
+        background: darkcyan;
+        color: magenta;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MI PRIMERA PAGINA WEB</h1>
+    <section class="banner">
+      <h2>SOBRE MI</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus vel
+        atque voluptate. Dolorum doloremque mollitia adipisci accusantium
+        distinctio illum nobis ea quas temporibus dicta neque, voluptatum nam
+        dolore impedit tenetur!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+        obcaecati! Necessitatibus maiores facere quia et, alias molestiae
+        reiciendis magni eaque fuga veritatis corporis eius officiis amet
+        delectus ipsum, distinctio facilis.
+      </p>
+    </section>
+    <section class="about">
+      <h2>PROFESION</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+        obcaecati! Necessitatibus maiores facere quia et, alias molestiae
+        reiciendis magni eaque fuga veritatis corporis eius officiis amet
+        delectus ipsum, distinctio facilis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+        obcaecati! Necessitatibus maiores facere quia et, alias molestiae
+        reiciendis magni eaque fuga veritatis corporis eius officiis amet
+        delectus ipsum, distinctio facilis.
+      </p>
+    </section>
+    <section class="services">
+      <h2>HOBBIES</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+        obcaecati! Necessitatibus maiores facere quia et, alias molestiae
+        reiciendis magni eaque fuga veritatis corporis eius officiis amet
+        delectus ipsum, distinctio facilis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+        obcaecati! Necessitatibus maiores facere quia et, alias molestiae
+        reiciendis magni eaque fuga veritatis corporis eius officiis amet
+        delectus ipsum, distinctio facilis.
+      </p>
+    </section>
+    <section>
+      <h2>CONTACTAME</h2>
+      <form action="">
+        <input type="text" placeholder="NOMBRE" />
+        <input type="text" placeholder="APELLIDO" />
+        <br />
+        <input type="text" placeholder="TELEFONO" />
+        <input type="text" placeholder="CORREO" />
+        <br />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Descripcion"
+        ></textarea>
+        <button>ENVIAR</button>
+      </form>
+    </section>
+    <!-- <ul>
+      <li>Unordered item</li>
+      <li>
+        Unordered item
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ol>
+      </li>
+    </ul> -->
+  </body>
+</html>
