@@ -106,3 +106,83 @@ p {
   line-height: 1;
   background-image: url('../images/client-4.png');
 }
+
+
+h1,
+h2 {
+  color: red;
+}
+
+input:focus {
+
+}
+
+a:hover {
+
+}
+
+input::after {
+  content: 'hola';
+}
+
+p::first-letter {
+
+}
+
+.banner li:nth-child(3) {
+
+}
+
+
+
+
+body {
+  font-family: verdana;
+  color: red;
+}
+
+h2 {
+  font-family: arial;
+  color: pink;
+  text-decoration: underline;
+  font-size: 32px;
+}
+
+.nosotros a {
+  color: green;
+}
+
+.nosotros h2 {
+  color: blue;
+}
+
+
+<body>
+  <div>
+    <h2>hola</h2>
+    <h2>hola</h2>
+    <h3>hola</h3>
+    <p>lola</p>
+
+    <ul>
+      <li>
+          <a>link<a>
+          <a>link</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="nosotros">
+    <h2>hola</h2>
+    <h2>hola</h2>
+    <h3>hola</h3>
+    <p>lola</p>
+
+    <ul>
+      <li>
+          <a>link<a>
+          <a>link</a>
+      </li>
+    </ul>
+  </div>
+</body>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSITION</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      /*
+        top
+        left
+        right
+        bottom
+      */
+      .relative {
+        position: relative;
+        background: green;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      section {
+        height: 500px;
+        background: green;
+        position: relative;
+        top: 0;
+      }
+
+      .absolute {
+        position: absolute;
+        background: red;
+        bottom: 0;
+      }
+
+      .first {
+        background: orange;
+        left: 10px;
+      }
+
+      .second {
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box relative"></div>
+    
+    <div class="box absolute"></div> -->
+
+    <section>
+      
+      <div class="box absolute first"></div>
+      <div class="box absolute second"></div>
+    </section>
+  </body>
+</html>
