@@ -16,6 +16,7 @@ body {
 
 h1 {
   font-size: 6.4rem;
+  font-weight: 900;
 }
 
 h2 {
@@ -79,10 +80,10 @@ my-skills
   display: inline-block;
   width: 50%;
   margin-bottom: 20px;
+  margin-right: -1.5px;
 }
 
 .my-skills .item:nth-child(odd) {
-  margin-right: -3px;
   padding-right: 12px;
 }
 
