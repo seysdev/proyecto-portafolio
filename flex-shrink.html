@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex shrink</title>
+    <style>
+      .flex {
+        display: flex;
+        width: 200px;
+      }
+
+/*
+    unidad de decrecimiento = -200 / 4 = 50
+*/
+      .flex div {
+        width: 100px;
+        color: #fff;
+      }
+
+      .flex div:nth-child(even) {
+        background-color: orange;
+      }
+
+      .flex div:nth-child(odd) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </body>
+</html>

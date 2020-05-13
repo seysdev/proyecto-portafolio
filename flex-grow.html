@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEX GROW</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      header,
+      footer {
+        padding: 20px;
+        background-color: green;
+        color: #fff;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      main {
+        flex-grow: 1;
+        display: flex;
+      }
+
+      aside {
+        width: 200px;
+        background-color: red;
+      }
+
+      section {
+          flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <header>
+        header
+      </header>
+      <main>
+        <aside>
+          aside
+        </aside>
+        <section>
+            <h2>section</h2>
+        </section>
+      </main>
+      <footer>
+        footer
+      </footer>
+    </div>
+  </body>
+</html>
