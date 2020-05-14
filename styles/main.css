@@ -217,6 +217,15 @@ clients
   align-items: center;
 }
 
+.clients .items div {
+  width: 25%;
+  padding: 0 10px;
+}
+
+.clients img {
+  width: 100%;
+}
+
 /*
 contact
 */
@@ -265,24 +274,71 @@ contact
 
 /*TABLET*/
 @media (max-width: 860px) {
-  .my-skills {
-    background: red;
+  /*globals*/
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  .my-skills,
+  .services,
+  .portfolio,
+  .clients,
+  .contact {
+    padding: 40px;
+  }
+
+  /*banner*/
+  .banner h2 {
+    right: 52px;
+    bottom: 40px;
+    text-align: center;
   }
 }
 
 /*TABLET SMALL // CELLPHONES LARGE*/
-@media (max-width: 720px) {
-
+@media (max-width: 780px) {
+  /*globals*/
+  h1 {
+    color: red;
+    font-size: 4.4rem;
+  }
 }
 
 /*// CELLPHONES MEDIUM*/
-@media (max-width: 520px) {
+@media (max-width: 620px) {
+  /*globals*/
+  .my-skills,
+  .services,
+  .portfolio,
+  .clients,
+  .contact {
+    padding: 20px;
+  }
 
+  /*banner*/
+  .banner h2 {
+    font-size: 2rem;
+    padding: 10px;
+    right: inherit;
+  }
+
+  /*my-skills*/
+  .my-skills h2 {
+    margin-bottom: 10px;
+  }
+
+  .my-skills .item {
+    width: 100%;
+  }
+
+  .my-skills .item:nth-child(odd),
+  .my-skills .item:nth-child(even) {
+    padding: 0;
+  }
 }
 
 /*// CELLPHONES SMALL*/
-@media (max-width: 420px) {
-  
+@media (max-width: 480px) {
 }
 /* 
 @media (max-width: 720px) {
