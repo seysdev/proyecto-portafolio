@@ -27,6 +27,12 @@ h3 {
   font-size: 1.8rem;
 }
 
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 /*
 main
 */
@@ -41,6 +47,10 @@ banner
 */
 .banner {
   position: relative;
+}
+
+.banner img {
+  width: 100%;
 }
 
 .banner h1 {
@@ -163,6 +173,28 @@ portfolio
 */
 .portfolio {
   background-color: #ffd233;
+  padding: 44px 180px 86px;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.portfolio .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .flex div {
+  width: 25%;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+.portfolio img {
+  width: 100%;
+  display: block;
 }
 
 /*
@@ -170,6 +202,19 @@ clients
 */
 .clients {
   background-color: #3f4e62;
+  text-align: center;
+  padding: 36px 68px 76px;
+}
+
+.clients h2 {
+  margin-bottom: 20px;
+}
+
+.clients .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*
@@ -177,4 +222,97 @@ contact
 */
 .contact {
   background-color: #7a7a7a;
+  padding: 36px 100px 66px;
+  text-align: center;
 }
+
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact input {
+  width: 49%;
+  margin-bottom: 18px;
+  padding: 20px 10px;
+}
+
+.contact textarea {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 10px;
+  resize: none;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+}
+
+.contact div {
+  text-align: center;
+  width: 100%;
+}
+
+.contact button {
+  padding: 20px;
+  width: 166px;
+  color: white;
+  background-color: #233451;
+  border: 1px solid #233451;
+  cursor: pointer;
+}
+
+/*TABLET*/
+@media (max-width: 860px) {
+  .my-skills {
+    background: red;
+  }
+}
+
+/*TABLET SMALL // CELLPHONES LARGE*/
+@media (max-width: 720px) {
+
+}
+
+/*// CELLPHONES MEDIUM*/
+@media (max-width: 520px) {
+
+}
+
+/*// CELLPHONES SMALL*/
+@media (max-width: 420px) {
+  
+}
+/* 
+@media (max-width: 720px) {
+  .my-skills {
+    background: green;
+    padding: 50px;
+  }
+
+  .my-skills h2 {
+    margin-bottom: 10px;
+  }
+
+  .my-skills .item {
+    width: 100%;
+  }
+
+  .my-skills .item:nth-child(even),
+  .my-skills .item:nth-child(odd) {
+    padding: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .my-skills {
+    background: blue;
+  }
+}
+
+@media (max-width: 420px) {
+  .my-skills {
+    background: yellow;
+  }
+} */
