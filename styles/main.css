@@ -339,36 +339,65 @@ contact
 
 /*// CELLPHONES SMALL*/
 @media (max-width: 480px) {
-}
-/* 
-@media (max-width: 720px) {
-  .my-skills {
-    background: green;
-    padding: 50px;
+  h2 {
+    font-size: 2.4rem;
   }
 
-  .my-skills h2 {
-    margin-bottom: 10px;
+  h3 {
+    font-size: 1.4rem;
   }
 
-  .my-skills .item {
+  /*banner*/
+  .banner h1 {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  .banner h2 {
+    font-size: 1.8rem;
+    right: 52px;
+    bottom: 20px;
+  }
+
+  /*services*/
+  .services h2 {
+    margin-bottom: 30px;
+  }
+
+  .services .items div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /*portfolio*/
+  .portfolio h2 {
+    margin-bottom: 20px;
+  }
+
+  .portfolio .flex div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /*clients*/
+  .clients h2 {
+    margin-bottom: 20px;
+  }
+
+  .clients .items div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /*contact*/
+  .contact h2 {
+    margin-bottom: 20px;
+  }
+
+  .contact input {
     width: 100%;
   }
-
-  .my-skills .item:nth-child(even),
-  .my-skills .item:nth-child(odd) {
-    padding: 0;
-  }
 }
-
-@media (max-width: 520px) {
-  .my-skills {
-    background: blue;
-  }
-}
-
-@media (max-width: 420px) {
-  .my-skills {
-    background: yellow;
-  }
-} */
